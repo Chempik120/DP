@@ -4,7 +4,7 @@
 /*-------------------------------------------------*/
 
 .clearfix {
-  *zoom: 1;
+  zoom: 1;
 }
 
 .clearfix:before,
@@ -499,7 +499,7 @@ p {
 .owl-theme .owl-controls .owl-buttons div {
   background: #222831;
   zoom: 1;
-  *display: inline;/*IE7 life-saver */
+  display: inline;/*IE7 life-saver */
   width: 31px;
   height: 64px;
   margin: -32px 0 0 0;
