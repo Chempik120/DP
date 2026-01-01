@@ -857,16 +857,19 @@ h3.cta-subheading {
 /*Promo Boxes*/
 
 .promo-box-first {
+  height: 656.5px;
   padding: 140px 100px;
   background-color: #35a0e2; /*any color can be here*/
 }
 
 .promo-box-second {
+  height: 656.5px;
   padding: 140px 100px;
   background-color: #35a0e2; /*any color can be here*/
 }
 
 .promo-box-third {
+  height: 656.5px;
   padding: 140px 100px;
   background-color: #35a0e2; /*any color can be here*/
 }
