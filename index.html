@@ -5,14 +5,12 @@
 	<title>Courses</title>
 
 	<meta charset="utf-8">
-
-	<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	
-	<!-- Google Fonts -->
 	<link href='https://fonts.googleapis.com/css?family=Arimo&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Noto+Serif&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-
+<script src="https://kit.fontawesome.com/ecf131a3d2.js" crossorigin="anonymous"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen">
 	
 	
@@ -24,18 +22,13 @@
 	<link rel="stylesheet" type="text/css" href="css/responsive.css" media="screen" />
 	<link rel="stylesheet" type="text/css" href="css/animate.css" media="screen" />
 	<link rel="stylesheet" type="text/css" href="css/slider.css">
-
+	<link rel="stylesheet" href="./modal.css">
 </head>
 
 <body>
 
-	<!-- Preloader -->
-	<div id="preloader">
-	    <div id="status">&nbsp;</div>
-	</div>
 
 	<header>
-	<!-- Navbar -->
 	    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 	    	<nav class="navigation">
 		      	<div class="container">
@@ -46,13 +39,12 @@
 				            <span class="icon-bar"></span>
 				            <span class="icon-bar"></span>
 			        	</button>	        	 
-						<!-- Logo -->
 						<div class="logo">
 				        	<a href="index.html">
 				        		Courses<i>IT</i>
 				          	</a>
 			        	</div>         
-			        </div> <!-- end navbar-header -->
+			        </div> 
 
 			        <div class="collapse navbar-collapse" id="navbar-collapse">
 			          
@@ -63,7 +55,7 @@
 				            </li>
 
 				            <li class="nav-el">
-				            	<a class="nav-el" href="#">Направления</a>
+				            	<a  href="#">Направления</a>
 				            </li>
 
 				            <li class="nav-el">
@@ -74,30 +66,15 @@
 				            	<a href="#">Учебный план</a>
 				            </li>
 
-				            <li class="nav-el">
-				            	<a href="#">Личный кабинет</a>
+				            <li class="profile ">
+				            	<a><img data-modal-open class="profile-icon" src="upload/profile.png" alt="" ></a>
 				            </li>
-
-				            <li>
-				            	<div id="search">
-				            		<i class="pe-7s-search search-trigger"></i>
-				            	</div>
-				            	<div class="search-bar">
-					            	<div class="search-wrap">
-										<form role="form">
-										    <div class="form-group">
-											    <input type="search" class="form-control searchbox" placeholder="Search">
-									    	</div>
-									    	<button type="submit" class="search-button"><i class="pe-7s-search"></i></button>
-									    </form>
-								    </div>
 								</div>
-				            </li>
-			        	</ul> <!-- end menu -->
-			        </div> <!-- end collapse -->    
-	      		</div> <!-- end container -->
-	      	</nav> <!-- end navigation -->
-	    </nav> <!-- End Navbar -->
+			        	</ul> 
+			        </div>     
+	      		</div> 
+	      	</nav> 
+	    </nav> 
 	</header>
 
 	<div class="main-wrapper">
@@ -111,47 +88,9 @@
 					<a href="#0" class="cd-btn">Подробнее</a>
 				</div>
 			</li>
-				
-			<li>
-				<div>
-					<h2>Обучение</h2>
-					<p>Гибкий график занятий,который вы всегда сможете настроить под себя</p>
-					<a href="#0" class="cd-btn">подробнее</a>
-				</div>
-			</li>
-
-			<li>
-				<div>
-					<h2>Преподаватели</h2>
-					<p>В нашей академии лучшие специалисты со всей Украины которые готовы дать вам наилучшие знания</p>
-					<a href="#0" class="cd-btn">подробнее</a>
-				</div>
-			</li>
-
-			<li>
-				<div>
-					<h2>Оплата</h2>
-					<p>Оплачивайте обучение по частям,или получите скидку оплатив сразу весь курс</p>
-					<a href="#0" class="cd-btn">подробнее</a>
-				</div>
-			</li>
-		</ul> <!-- .cd-slider -->
-	
-		<ol class="cd-slider-navigation">
-			<li class="selected"><a href="#0"><em>Слайд#1</em></a></li>
-			<li><a href="#0"><em>Слайд#2</em></a></li>
-			<li><a href="#0"><em>Слайд#3</em></a></li>
-			<li><a href="#0"><em>Слайд#4</em></a></li>
-		</ol> <!-- .cd-slider-navigation -->
-		
-		<div class="cd-svg-cover" data-step1="M1402,800h-2V0.6c0-0.3,0-0.3,0-0.6h2v294V800z" data-step2="M1400,800H383L770.7,0.6c0.2-0.3,0.5-0.6,0.9-0.6H1400v294V800z" data-step3="M1400,800H0V0.6C0,0.4,0,0.3,0,0h1400v294V800z" data-step4="M615,800H0V0.6C0,0.4,0,0.3,0,0h615L393,312L615,800z" data-step5="M0,800h-2V0.6C-2,0.4-2,0.3-2,0h2v312V800z" data-step6="M-2,800h2L0,0.6C0,0.3,0,0.3,0,0l-2,0v294V800z" data-step7="M0,800h1017L629.3,0.6c-0.2-0.3-0.5-0.6-0.9-0.6L0,0l0,294L0,800z" data-step8="M0,800h1400V0.6c0-0.2,0-0.3,0-0.6L0,0l0,294L0,800z" data-step9="M785,800h615V0.6c0-0.2,0-0.3,0-0.6L785,0l222,312L785,800z" data-step10="M1400,800h2V0.6c0-0.2,0-0.3,0-0.6l-2,0v312V800z">
-			<svg height='100%' width="100%" preserveAspectRatio="none" viewBox="0 0 1400 800">
-				<path id="cd-changing-path" d="M1402,800h-2V0.6c0-0.3,0-0.3,0-0.6h2v294V800z"/>
-			</svg>
-		</div> <!-- .cd-svg-cover -->
-	</section> <!-- .cd-slider-wrapper -->
-
-	<!-- Our Services -->
+		</ul> 
+		</div> 
+	</section> 
 		<section class="section-wrap services">
 			<div class="container">
 				<div class="row">
@@ -164,7 +103,7 @@
 							<div class="main-border blue"></div>
 							<p class="text-center">Подходит для начинающих без опыта в программировании.</p>							
 						</div>						
-					</div> <!-- end service item -->
+					</div> 
 
 					<div class="col-sm-4">
 						<div class="service-item icon-effect-1 icon-violet icon-effect-1a">							
@@ -175,7 +114,7 @@
 							<div class="main-border violet"></div>
 							<p class="text-center">Реальные проекты и командная работа.</p>							
 						</div>						
-					</div> <!-- end service item -->
+					</div> 
 
 					<div class="col-sm-4">
 						<div class="service-item icon-effect-1 icon-orange icon-effect-1a last">							
@@ -186,12 +125,10 @@
 							<div class="main-border orange"></div>
 							<p class="text-center">Подготовка к трудоустройству и портфолио.</p>							
 						</div>						
-					</div><!-- end service item -->
-				</div> <!-- end row -->
-			</div> <!-- end container -->
-		</section> <!-- end services -->
-
-	<!-- Call to Action -->
+					</div>
+				</div> 
+			</div> 
+		</section> 
 		<section class="call-to-action">
 			<div class="container">			
 				<h3 class="cta-subheading text-center">Мы предлагаем только качественные услуги</h3>
@@ -200,10 +137,8 @@
 					<a href="#" id="cta-button-solid" class="btn btn-large btn-rounded btn-light-solid">Заказать</a>
 					<a href="#" id="cta-button-stroke" class="btn btn-large btn-rounded btn-light-transparent">Подробнее</a>
 				</div>
-			</div> <!-- end container -->
-		</section> <!-- end call to action -->
-
-	<!-- Core Features -->
+			</div> 
+		</section> 
 		<section class="core-features style-1">
 			<div class="container">			
 				<h2 class="text-center">Почему выбирают нас</h2>
@@ -212,7 +147,6 @@
 
 				<div class="features-promo mt70">
 					<div class="row">
-						<!-- start left column -->
 						<div class="col-lg-3 col-md-4 col-sm-6">
 							<div class="features-item features-right text-right">
 								<div class="features-icon">
@@ -220,7 +154,7 @@
 								</div>
 								<h5>Обучение с нуля</h5>
 								<p>Пошаговое обучение программированию для начинающих без технического бэкграунда.</p>
-							</div> <!-- end features item -->
+							</div> 
 
 							<div class="features-item features-right text-right">
 								<div class="features-icon">
@@ -228,7 +162,7 @@
 								</div>
 								<h5>Практика на реальных проектах</h5>
 								<p>Выполняйте задания и проекты, приближённые к реальной работе IT-специалиста.</p>
-							</div> <!-- end features item -->
+							</div> 
 
 							<div class="features-item features-right text-right">
 								<div class="features-icon">
@@ -236,14 +170,12 @@
 								</div>
 								<h5>Современные технологии</h5>
 								<p>Изучаем актуальные языки программирования, фреймворки и инструменты.</p>
-							</div> <!-- end features item -->
-						</div> <!-- end left column-->
+							</div> 
+						</div> 
 						
 						<div class="promo-img col-lg-6 col-md-4 hidden-sm hidden-xs text-center">
-							<img src="upload/core_features_img.jpg" alt="core-features-img">
+							<img src="upload/features.avif" alt="core-features-img">
 						</div>
-
-						<!-- start right column -->
 						<div class="col-lg-3 col-md-4 col-sm-6">
 							<div class="features-item">
 								<div class="features-icon">
@@ -251,7 +183,7 @@
 								</div>
 								<h5>Опытные наставники</h5>
 								<p>Преподаватели — действующие разработчики с коммерческим опытом.</p>
-							</div> <!-- end features item -->
+							</div> 
 
 							<div class="features-item">
 								<div class="features-icon">
@@ -259,7 +191,7 @@
 								</div>
 								<h5>Гибкий формат обучения</h5>
 								<p>Онлайн-занятия, записи уроков и удобный график обучения.</p>
-							</div> <!-- end features item -->
+							</div> 
 
 							<div class="features-item">
 								<div class="features-icon">
@@ -267,49 +199,45 @@
 								</div>
 								<h5>Поддержка и трудоустройство</h5>
 								<p>Помощь с резюме, портфолио и подготовкой к собеседованиям.</p>
-							</div> <!-- end features item -->
-						</div> <!-- end right column-->
-					</div> <!-- end row -->
-				</div> <!-- end features promo -->
-			</div> <!-- end container -->
-		</section> <!-- end core features -->
-
-	<!-- Results -->
+							</div> 
+						</div> 
+					</div> 
+				</div> 
+			</div> 
+		</section> 
 		<section class="results">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-3 text-center">
 						<div class="statistic">
-							<span class="timer" data-from="0" data-to="5000"></span>
+							<span class="timer">5000</span>
 							<h5 class="counter-text">выпускников</h5>
 						</div>
-					</div> <!-- end col -->
+					</div> 
 
 					<div class="col-sm-3 text-center">
 						<div class="statistic">
-							<span class="timer" data-from="0" data-to="1789"></span>
+							<span class="timer">1789</span>
 							<h5 class="counter-text">дипломных проектов</h5>
 						</div>
-					</div> <!-- end col -->
+					</div> 
 
 					<div class="col-sm-3 text-center">
 						<div class="statistic">
-							<span class="timer" data-from="0" data-to="3589"></span>
+							<span class="timer">3589</span>
 							<h5 class="counter-text">бывших студентов трудоустроились</h5>
 						</div>
-					</div> <!-- end col -->
+					</div> 
 
 					<div class="col-sm-3 text-center">
 						<div class="statistic">
-							<span class="timer" data-from="0" data-to="180"></span>
+							<span class="timer">180</span>
 							<h5 class="counter-text">Уроков за год</h5>
 						</div>
-					</div> <!-- end col -->
-				</div> <!-- end row -->
-			</div> <!-- end container -->
-		</section> <!-- end results -->
-
-	<!-- Our Team -->
+					</div> 
+				</div> 
+			</div> 
+		</section> 
 		<section class="section-wrap our-team bg-light">
 			<div class="container">
 				<h2 class="text-center">Наша команда</h2>
@@ -319,7 +247,7 @@
 				<ul id="team" class="clearfix">
 					<li class="team-member">
 						<div class="team-img">
-							<img src="upload/team_member_1.jpg" alt="team member 1">
+							<img src="upload/employee.jpg" alt="team member 1">
 						</div>
 						<div class="team-details text-center">
 							<h5 class="team-title">Александр Сергеевич</h5>
@@ -331,7 +259,7 @@
 								<a href="#"><i class="fa fa-envelope"></i></a>
 							</div>
 						</div>
-					</li> <!-- end team member -->
+					</li> 
 
 					<li class="team-member">
 						<div class="team-img">
@@ -347,7 +275,7 @@
 								<a href="#"><i class="fa fa-envelope"></i></a>
 							</div>
 						</div>
-					</li> <!-- end team member -->
+					</li> 
 
 					<li class="team-member">
 						<div class="team-img">
@@ -363,7 +291,7 @@
 								<a href="#"><i class="fa fa-envelope"></i></a>
 							</div>
 						</div>
-					</li> <!-- end team member -->
+					</li> 
 
 					<li class="team-member">
 						<div class="team-img">
@@ -379,60 +307,24 @@
 								<a href="#"><i class="fa fa-envelope"></i></a>
 							</div>
 						</div>
-					</li> <!-- end team member -->
+					</li> 
 				</ul>
-			</div> <!-- end container -->
-		</section> <!-- end our team -->
-
-	<!-- From Blog -->
-		<section class="section-wrap from-blog">
-			<div class="container">			
-				<h2 class="text-center">Новости & Статьи</h2>
-				<p class="subheading text-center">Последние события</p>
-				<div class="main-border blue"></div>
-
-				<div class="blog-articles mt50">
-					<div class="col-xs-12 text-center">
-						<div class="entry-text">
-							<h3>
-								<a href="#">Создание и продвижение компаний в сети Интернет</a>
-							</h3>
-							<span class="blog-data">9 августа, 2015</span>	
-						</div> <!-- end entry -->	
-
-						<div class="entry-text mt40">
-							<h3>
-								<a href="#">Создание и продвижение компаний в сети Интернет</a>
-							</h3>
-							<span class="blog-data">5 августа, 2015</span>	
-						</div><!-- end entry -->
-
-						<div class="entry-text mt40">
-							<h3>
-								<a href="#">Создание и продвижение компаний в сети Интернет</a>
-							</h3>
-							<span class="blog-data">3 августа, 2015</span>	
-						</div><!-- end entry -->		
-
-					</div> <!-- end column-->
-				</div> <!-- end blog-article -->
-			</div> <!-- end container -->
-		</section> <!-- end from blog -->
-
-	<!-- Promo Boxes -->
+			</div> 
+		</section> 
+		
 		<section class="promo-boxes">
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-md-4 nopadding">
 						<div class="promo-box-first">
 							
-							<h2 class="heading-white">Практика и код</h2>
-							<p class="white">Таким образом новая модель организационной деятельности способствует подготовки и реализации системы обучения кадров, соответствует насущным потребностям. Повседневная практика показывает, что дальнейшее развитие различных форм деятельности требуют от нас анализа форм развития.
+							<h2 class="heading-white">Обучение с использованием AI</h2>
+							<p class="white">Учим детей пользоваться искусственным интеллектом и не забывать о собственном. В современном мире AI — отличные помощники. Однако они не заменяют человека. Ученики GoITeens School учатся грамотно использовать технологии, развивая креативность, критическое мышление и навыки, необходимые в будущем.
 							</p>
 							<a href="#" class="btn btn-large btn-rounded btn-light-transparent">Читать</a>
 							<i class="icon icon-Click"></i>
-						</div> <!-- end fist promo box -->
-					</div> <!-- end col -->
+						</div> 
+					</div> 
 
 					<div class="col-md-4 nopadding">
 						<div class="promo-box-second">
@@ -441,8 +333,8 @@
 							<p class="white">Таким образом новая модель организационной деятельности способствует подготовки и реализации системы обучения кадров, соответствует насущным потребностям. Повседневная практика показывает, что дальнейшее развитие различных форм деятельности требуют от нас анализа форм развития.
 							</p>
 							<a href="#" class="btn btn-large btn-rounded btn-light-transparent">Читать</a>
-						</div> <!-- end fist promo box -->
-					</div> <!-- end col -->
+						</div> 
+					</div> 
 
 					<div class="col-md-4 nopadding">
 						<div class="promo-box-third">
@@ -451,15 +343,11 @@
 							<p class="white">Таким образом новая модель организационной деятельности способствует подготовки и реализации системы обучения кадров, соответствует насущным потребностям. Повседневная практика показывает, что дальнейшее развитие различных форм деятельности требуют от нас анализа форм развития.
 							</p>
 							<a href="#" class="btn btn-large btn-rounded btn-light-transparent">Читать</a>
-						</div> <!-- end fist promo box -->
-					</div> <!-- end col -->					
-				</div> <!-- end row -->
-			</div> <!-- end container -->
-		</section> <!-- end promo boxes-->
-
-	
-
-	<!-- Contact -->
+						</div> 
+					</div> 					
+				</div> 
+			</div> 
+		</section> 
 		<section class="section-wrap contact">
 			<div class="container">			
 				<h2 class="text-center">Связь</h2>
@@ -476,7 +364,7 @@
 		  					<input type="submit" value="Отправить" id="submit-message">
 			  				<div id="msg" class="message"></div>
 			  			</form>
-					</div> <!-- end col -->
+					</div> 
 					
 					<div class="col-md-4 col-md-offset-1 col-sm-5">
 						<h5>Ждем Вас</h5>
@@ -487,14 +375,14 @@
 								<i class="icon icon-Phone2"></i>
 							</div>
 							<span>111-111-111</span>
-						</div> <!-- end phone number -->
+						</div> 
 
 						<div class="contact-item">
 							<div class="contact-icon">
 								<i class="icon icon-Mail"></i>
 							</div>
 							<a href="#">info@gmail.com</a>
-						</div> <!-- end email -->
+						</div> 
 
 						<div class="contact-item">
 							<div class="contact-icon">
@@ -504,14 +392,12 @@
 							Россия<br>
 							Москва, ул. Пушкина<br>
 							11111</p>
-						</div> <!-- end address -->
+						</div> 
 
-					</div> <!-- end col -->
-				</div> <!-- end row -->
-			</div> <!-- end container -->
-		</section> <!-- end contact -->
-	
-	<!-- Footer -->
+					</div> 
+				</div> 
+			</div> 
+		</section> 
 		<footer id="footer">
 			<div class="container">
 				<div class="footer-widgets">
@@ -529,7 +415,7 @@
 									<a href="#"><i class="fa fa-instagram"></i></a>
 								</div>
 							</div>
-						</div> <!-- end about us -->
+						</div> 
 
 						<div class="col-md-4">
 							<h5 class="heading-white">Адрес</h5>
@@ -543,13 +429,13 @@
 								<p>Телефон: 111-111-111</p>
 								<p>Email: <a href="mailto:info@gmail.com">info@gmail.com</a></p>
 							</div>
-						</div> <!-- end stay in touch -->
+						</div> 
 
 						
 
-					</div> <!-- end row -->
-				</div> <!-- end footer widgets -->			
-			</div> <!-- end container -->
+					</div> 
+				</div> 			
+			</div> 
 
 			<div class="bottom-footer">
 				<div class="container">
@@ -558,17 +444,56 @@
 							<div class="copyright">
 								© 2026 Courses
 							</div>
-						</div> <!-- end col -->
-					</div> <!-- end row -->
-				</div> <!-- end container -->
-			</div> <!-- end bottom footer -->
-		</footer> <!-- end footer -->
+						</div> 
+					</div> 
+				</div> 
+			</div> 
+		</footer> 
 
 		<div id="back-to-top">
 			<a href="#top"><i class="fa fa-angle-up"></i></a>
 		</div>
 
-	</div> <!-- end main-wrapper -->
+	</div> 
+
+
+
+
+ <div class="backdrop is-hidden" data-modal>
+        <div class="modal" >
+            <button class="close" data-modal-close><i class="fa-solid fa-xmark"></i></button>
+            <h3 class="input-head">Залиште свої дані, ми вам передзвонимо</h3>
+            <form action="">
+                <label for="text" class="label">Ім'я</label>
+                <span class="input-cont">
+                <i class="fa-solid fa-user ico"></i>
+                <input type="text" id="text" class="name-input" autocomplete="off">
+                </span>
+                <label for="email" class="label">Пошта</label>
+                <span class="input-cont">
+                <i class="fa-solid fa-envelope ico"></i>
+                <input id="email"
+                type="email"  class="email-input"
+                autocomplete="off"
+                required minlength="10"
+                maxlength="40">
+                </span>
+                <label for="password" class="label">Пароль</label>
+                <span class="input-cont">
+                <i class="fa-solid fa-lock ico"></i>
+                <input type="password" id="password" class="password"
+                 autocomplete="off" required>
+                </span>
+                 <label for="comment" class="label">Коментар</label>
+                 <input type="text" id="comment" class="comment" placeholder="Введіть текст">
+                 <input type="checkbox" class="check"/><p class="check-text">Погоджуюся з розсилкою та приймаю <a class="a-check" href="">Умови договору</a></p>
+                <button type="submit" class="submit">Відправити</button>
+                
+            </form>
+        </div>
+    </div>
+    
+
 
 	
 	<script src="js/jquery.min.js"></script>
@@ -576,11 +501,13 @@
 	<script src="js/main.js"></script> 
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script src="js/wow.min.js"></script>
-
-	<!-- Custom Theme JavaScript -->
     <script src="js/scripts.js"></script>
 
-	  
+	  <script src="./modal.js" type="module"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
