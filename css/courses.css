@@ -1,0 +1,97 @@
+body{
+    background-image: url(../upload/back.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.courses-cont{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 130px;
+  margin-bottom: 100px;
+}
+
+
+.course-el{
+    border-radius: 20px;
+  background-color: #35a0e2;
+}
+
+.course-el:not(:last-child){
+margin-right: 50px;
+}
+
+.course-h{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 800;
+  color: white;
+  border-bottom: 2px solid white;
+  padding-bottom: 15px;
+}
+
+.course-text{
+  width: 220px;
+  padding-bottom: 50px;
+  font-size: medium;
+  font-weight: 400;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #ffffff;
+
+}
+
+.course-buy{
+  width: 230px;
+  height: 50px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  background-color: white;
+  border: 2px solid white;
+  color: #35a0e2;
+  border-radius: 70px;
+}
+
+.course-buy:hover{
+    background-color: #35a0e2;
+  border: 2px solid #ffffff;
+    color: white;
+    transition-duration: 500ms;
+}
+
+.course-price{
+  color: #ffffff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+  font-size: large;
+  margin-left: 15px;
+}
+
+.content{
+    padding: 30px 30px 30px 30px;
+}
+
+.heading{
+    margin-top: 200px;
+}
+
+.cont-head{
+    display: block;
+    justify-content: center;
+    padding: 0px 0px 0px 100px;
+}
+
+.head-text{
+    margin-top: 50px;
+    width: 700px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  color: black;
+}
+
+.line{
+    margin: 100px 100px 0px 100px;
+    background-color: #35a0e2;
+    width: 500px;
+    height: 4px;
+    border-radius: 70px;
+}
