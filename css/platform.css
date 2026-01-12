@@ -1,0 +1,88 @@
+body::-webkit-scrollbar {
+    display: none;
+}
+html, body {
+    overflow-y: hidden; 
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 0px;
+}
+    
+.div1 {
+    width: 228px;
+    height: 100vh;
+    background-color: #1f87dd;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    left: 0;
+    top: 0;
+    grid-row: span 5 / span 5;
+    position: absolute;
+}
+
+.div2 {
+    height: 72px;
+    width: 80vw;
+    border: 1px solid rgba(153, 152, 152, 0.377);
+    border-radius: 10px;
+    margin: 10px 10px 20px 17vw;
+    grid-column: span 2 / span 2;
+}
+
+.div5 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 4;
+}
+
+.div6 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 4;
+}
+
+.div8 {
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+
+.div9 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.div12 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+a{
+    text-decoration: none;
+}
+
+.logo > a{
+    
+    color: rgb(0, 0, 0);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    margin-left: 3vw;
+    position: absolute;
+    top: 2vw;
+    padding-bottom: 30px;
+    
+}
+
+.line{
+    background-color: white;
+    width: 190px;
+    height: 1px;
+    border-radius: 10px;
+    margin-top: 100px;
+    margin-left: 15px;
+}
