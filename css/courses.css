@@ -96,8 +96,36 @@ margin-right: 50px;
     border-radius: 70px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   .courses-cont{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+  .cont-head{
+   padding-left: 10px;
+  }
+
+  .head-text{
+    width: 90vw;
+  }
+
+  .line{
+    margin-left: 5px;
+    width: 80vw;
+  }
+
+  .course-el:not(:last-child){
+margin-right: 0px;
+}
+
+.course-el{
+  margin-bottom: 15px;
+}
+
+body{
+  background-position: 10%;
+  background-size: auto;
+}
 }
