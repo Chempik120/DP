@@ -76,18 +76,16 @@
   transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
   background-color: white;
   width: 528px;
-  height: 581px;
+  height: 400px;
   flex-shrink: 0;
   border-radius: 4px;
   background: #FFF;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   z-index: 1;
 }
-@media screen and (max-width: 768px) {
-  .modal {
-    left: 43%;
-  }
-}
+
+
+
 
 .name-input {
   width: 448px;
@@ -138,7 +136,7 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: 30px; /* 187.5% */
+  line-height: 30px;
   letter-spacing: 0.96px;
   margin-left: 164px;
   position: absolute;
@@ -159,19 +157,6 @@
   margin-top: 30px;
   margin-left: 40px;
   margin-bottom: 5px;
-}
-
-.comment {
-  width: 448px;
-  height: 100px;
-  flex-shrink: 0;
-  border-radius: 4px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  margin-left: 40px;
-  margin-bottom: 20px;
-  outline: none;
-  padding-left: 3px;
-  padding-bottom: 70px;
 }
 
 .check {
@@ -240,4 +225,55 @@
 
 .close {
   background-color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+  .modal {
+    width: 95vw;
+  height: 450px;
+  }
+
+ .name-input{
+   width: 80vw;
+   margin-left: 30px;
+ }
+
+ .email-input{
+  width: 80vw;
+  margin-left: 30px;
+ }
+
+ .password{
+  width: 80vw;
+  margin-left: 30px;
+ }
+
+ .input-head{
+  width: 75vw;
+ }
+
+ .label{
+  margin-left: -35vw;
+  font-weight: 500;
+  font-size: 14px;
+ }
+
+ .ico {
+  left: 40px;
+}
+
+.check-text{
+  margin-left: 50px;
+  font-size: 16px;
+  font-weight: 500px;
+}
+
+.check{
+  top: 295px;
+  left: 30px;
+}
+
+.submit{
+  margin-left: 23vw;
+}
 }
