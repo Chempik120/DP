@@ -95,3 +95,9 @@ margin-right: 50px;
     height: 4px;
     border-radius: 70px;
 }
+
+@media screen and (max-width: 768px) {
+  .courses-cont{
+    display: block;
+  }
+}
