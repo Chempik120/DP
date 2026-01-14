@@ -1157,3 +1157,26 @@ text-shadow: none;
 	}
 
 	
+.icon-books:before {
+  content: "\e920";
+}
+
+.icon-home:before {
+  content: "\e900";
+}
+
+.icon-book:before {
+  content: "\e91f";
+}
+
+.icon-folder-open:before {
+  content: "\e930";
+}
+
+.icon-arrow-left2:before {
+  content: "\ea40";
+}
+
+.icon-credit-card:before {
+  content: "\e93f";
+}
