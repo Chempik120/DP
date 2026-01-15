@@ -1180,3 +1180,7 @@ text-shadow: none;
 .icon-credit-card:before {
   content: "\e93f";
 }
+
+.icon-checkmark:before {
+  content: "\ea10";
+}
