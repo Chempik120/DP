@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Выпадающий список</title>
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            border: 1px solid #ccc;
+            z-index: 1;
+            
+        }
+
+        .dropdown-content div {
+            width: 80px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .dropdown-content div:hover {
+            background-color: #ddd;
+        }
+
+        .show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="dropdown">
+    <button onclick="toggleDropdown()">Открыть список</button>
+    <div id="dropdownMenu" class="dropdown-content">
+        <div>Элемент 1</div>
+        <div>Элемент 2</div>
+    </div>
+</div>
+
+<script>
+    function toggleDropdown() {
+        document.getElementById("dropdownMenu").classList.toggle("show");
+    }
+</script>
+
+</body>
+</html>

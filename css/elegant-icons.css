@@ -1184,3 +1184,10 @@ text-shadow: none;
 .icon-checkmark:before {
   content: "\ea10";
 }
+
+.icon-circle-down:before {
+  content: "\ea43";
+  width: 32px;
+  height: 32px;
+}
+

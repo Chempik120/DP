@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/149b13ecfe/UntitledProject/style.css">
+    <link rel="stylesheet" href="./css/dz-page.css">
+    <title>Домашние задания</title>
+</head>
+<body>
+    <div class="parent">
+    <div class="div1">
+     <div class="logo">
+		<a href="index.html">
+		Courses<i>IT</i>  
+		</a>
+	 </div> 
+     <div class="line"></div>
+
+
+     <ul class="nav-list">
+        <li class="nav-el"><span class="icon-home"></span><a href="./platform.html">Главная</a></li>
+        <li class="nav-el"><span class="icon-arrow-left2"></span><a href="./index.html">Сайт курсов</a></li>
+        <li class="nav-el"><span class="icon-folder-open"></span><a href="">Мои курсы</a></li>
+        <li class="nav-el"><span class="icon-books"></span><a href="">Конспекты</a></li>
+        <li class="nav-el"><span class="icon-book"></span><a href="./dz.html">Домашние задания</a></li>
+     </ul>
+
+    </div>
+    <div class="div2"><a><img class="profile-icon" src="upload/profile.png" alt="" ></a><p class="prof-text">Профиль</p></div>
+
+
+
+
+
+
+
+
+<div class="editor-panel">
+    <div class="panel-header">
+        <h3>Сдайте ДЗ</h3>
+    </div>
+
+    <div class="text-editor">
+        <div class="editor-toolbar">
+            <button class="toolbar-btn" id="boldBtn" title="Жирный"><b>B</b></button>
+            <button class="toolbar-btn" id="italicBtn" title="Курсив"><i>I</i></button>
+            <button class="toolbar-btn" id="underlineBtn" title="Подчеркнутый"><u>U</u></button>
+        </div>
+        <textarea 
+            class="text-area" 
+            id="textEditor" 
+            placeholder="Введите текст здесь..."
+            maxlength="5000"></textarea>
+        <div class="char-counter" id="charCounter">0 / 5000</div>
+    </div>
+
+    <div class="file-section">
+        <h4>Прикрепить файлы</h4>
+        <div class="file-upload-area" id="dropZone">
+            <div class="upload-icon">📎</div>
+            <div class="upload-text">
+                Нажмите или перетащите файлы
+            </div>
+        </div>
+        <input type="file" id="fileInput" class="file-input" multiple>
+        <div class="attached-files" id="attachedFiles"></div>
+    </div>
+
+    <div class="action-buttons">
+        <button class="btn btn-secondary" id="clearBtn">Очистить</button>
+        <button class="btn btn-primary" id="saveBtn">Сохранить</button>
+    </div>
+</div>
+
+
+
+
+
+
+<script>
+let attachedFiles = [];
+let isBold = false;
+let isItalic = false;
+let isUnderline = false;
+
+
+const textEditor = document.getElementById('textEditor');
+const charCounter = document.getElementById('charCounter');
+const dropZone = document.getElementById('dropZone');
+const fileInput = document.getElementById('fileInput');
+const attachedFilesContainer = document.getElementById('attachedFiles');
+const boldBtn = document.getElementById('boldBtn');
+const italicBtn = document.getElementById('italicBtn');
+const underlineBtn = document.getElementById('underlineBtn');
+const clearBtn = document.getElementById('clearBtn');
+const saveBtn = document.getElementById('saveBtn');
+
+
+function updateCharCounter() {
+    charCounter.textContent = `${textEditor.value.length} / 5000`;
+}
+
+textEditor.addEventListener('input', updateCharCounter);
+
+
+boldBtn.addEventListener('click', () => {
+    isBold = !isBold;
+    if (isBold) {
+        textEditor.classList.add('bold');
+        boldBtn.classList.add('active');
+    } else {
+        textEditor.classList.remove('bold');
+        boldBtn.classList.remove('active');
+    }
+});
+
+italicBtn.addEventListener('click', () => {
+    isItalic = !isItalic;
+    if (isItalic) {
+        textEditor.classList.add('italic');
+        italicBtn.classList.add('active');
+    } else {
+        textEditor.classList.remove('italic');
+        italicBtn.classList.remove('active');
+    }
+});
+
+underlineBtn.addEventListener('click', () => {
+    isUnderline = !isUnderline;
+    if (isUnderline) {
+        textEditor.classList.add('underline');
+        underlineBtn.classList.add('active');
+    } else {
+        textEditor.classList.remove('underline');
+        underlineBtn.classList.remove('active');
+    }
+});
+
+
+dropZone.addEventListener('dragover', (e) => {
+    e.preventDefault();
+    dropZone.classList.add('dragover');
+});
+
+dropZone.addEventListener('dragleave', () => {
+    dropZone.classList.remove('dragover');
+});
+
+dropZone.addEventListener('drop', (e) => {
+    e.preventDefault();
+    dropZone.classList.remove('dragover');
+    handleFiles(e.dataTransfer.files);
+});
+
+dropZone.addEventListener('click', () => {
+    fileInput.click();
+});
+
+fileInput.addEventListener('change', (e) => {
+    handleFiles(e.target.files);
+});
+
+
+function handleFiles(files) {
+    const filesArray = Array.from(files);
+    filesArray.forEach(file => {
+        if (!attachedFiles.find(f => f.name === file.name && f.size === file.size)) {
+            attachedFiles.push(file);
+            addFileToList(file);
+        }
+    });
+}
+
+
+function addFileToList(file) {
+    const fileItem = document.createElement('div');
+    fileItem.className = 'file-item';
+    
+    const fileName = document.createElement('span');
+    fileName.className = 'file-name';
+    fileName.textContent = file.name;
+    fileName.title = file.name;
+    
+    const removeBtn = document.createElement('button');
+    removeBtn.className = 'file-remove';
+    removeBtn.innerHTML = '×';
+    removeBtn.onclick = () => removeFile(file, fileItem);
+    
+    fileItem.appendChild(fileName);
+    fileItem.appendChild(removeBtn);
+    attachedFilesContainer.appendChild(fileItem);
+}
+
+
+function removeFile(file, element) {
+    attachedFiles = attachedFiles.filter(f => f !== file);
+    element.remove();
+}
+
+clearBtn.addEventListener('click', () => {
+    if (confirm('Вы уверены, что хотите очистить все данные?')) {
+        textEditor.value = '';
+        attachedFiles = [];
+        attachedFilesContainer.innerHTML = '';
+        
+
+        isBold = false;
+        isItalic = false;
+        isUnderline = false;
+        textEditor.classList.remove('bold', 'italic', 'underline');
+        boldBtn.classList.remove('active');
+        italicBtn.classList.remove('active');
+        underlineBtn.classList.remove('active');
+        
+        updateCharCounter();
+    }
+});
+
+
+saveBtn.addEventListener('click', () => {
+    const text = textEditor.value;
+    
+    if (!text && attachedFiles.length === 0) {
+        alert('Добавьте текст или прикрепите файлы перед сохранением');
+        return;
+    }
+
+    const content = {
+        text: text,
+        formatting: {
+            bold: isBold,
+            italic: isItalic,
+            underline: isUnderline
+        },
+        files: attachedFiles.map(f => ({ 
+            name: f.name, 
+            size: f.size, 
+            type: f.type 
+        })),
+        timestamp: new Date().toISOString()
+    };
+
+    console.log('Сохраненный контент:', content);
+    alert(`Контент сохранен!\n\nТекст: ${text.length} символов\nФайлов: ${attachedFiles.length}`);
+    
+
+});
+</script>
+</body>
+</html>
