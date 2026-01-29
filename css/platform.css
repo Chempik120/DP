@@ -365,3 +365,11 @@ span{
     background-color: rgba(228, 147, 76, 0.77);
     color: white;
 }
+
+
+.profile-a:hover{
+    color: #1f87dd;
+    text-decoration: underline;
+}
+    
+

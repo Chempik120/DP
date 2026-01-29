@@ -156,7 +156,6 @@ span{
     margin: 0;
 }
 
-/* Область текстового редактора */
 .text-editor {
     flex: 1;
     display: flex;
@@ -226,7 +225,6 @@ span{
     text-decoration: underline;
 }
 
-/* Секция прикрепления файлов */
 .file-section {
     padding: 12px;
     border-top: 1px solid #e0e0e0;
@@ -309,7 +307,6 @@ span{
     color: #c62828;
 }
 
-/* Кнопки действий */
 .action-buttons {
     padding: 12px;
     border-top: 1px solid #e0e0e0;
@@ -318,7 +315,7 @@ span{
 }
 
 .btn {
-    flex: 1;
+    
     padding: 9px;
     border: none;
     border-radius: 4px;
@@ -351,4 +348,30 @@ span{
     color: #999;
     text-align: right;
     margin-top: 4px;
+}
+
+.dz-text{
+    position: absolute;
+    left: 17.5vw;
+    top: 7vw;
+    border: 1px solid rgb(213, 210, 210);
+    border-radius: 20px;
+    width: 58vw;
+    height: 84.5%;
+    background-image: url(../upload/back.jpg);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-position: 25%;
+}
+
+.dz-h{
+    margin-left: 50px;
+}
+
+.dz-p{
+    margin-left: 50px;
+}
+
+.profile-a:hover{
+    color: #1f87dd;
+    text-decoration: underline;
 }
