@@ -316,7 +316,6 @@
 							<h2 class="heading-white">Обучение с использованием AI</h2>
 							<p class="white">Учим детей пользоваться искусственным интеллектом и не забывать о собственном. В современном мире AI — отличные помощники. Однако они не заменяют человека. Ученики GoITeens School учатся грамотно использовать технологии, развивая креативность, критическое мышление и навыки, необходимые в будущем.
 							</p>
-							<a href="#" class="btn btn-large btn-rounded btn-light-transparent">Читать</a>
 							<i class="icon icon-Click"></i>
 						</div> 
 					</div> 
@@ -327,7 +326,6 @@
 							<h2 class="heading-white">Осознанный выбор языка</h2>
 							<p class="white">Таким образом новая модель организационной деятельности способствует подготовки и реализации системы обучения кадров, соответствует насущным потребностям. Повседневная практика показывает, что дальнейшее развитие различных форм деятельности требуют от нас анализа форм развития.
 							</p>
-							<a href="#" class="btn btn-large btn-rounded btn-light-transparent">Читать</a>
 						</div> 
 					</div> 
 
@@ -337,7 +335,6 @@
 							<h2 class="heading-white">Результат обучения</h2>
 							<p class="white">После окончания вашего обучения мы бесплатно вас трудоустроим на подходящюю для вас вакансию,поможем с составлением резюме и портфолио.
 							</p>
-							<a href="#" class="btn btn-large btn-rounded btn-light-transparent">Читать</a>
 						</div> 
 					</div> 					
 				</div> 
@@ -398,37 +395,60 @@
 
 
 
- <div class="backdrop is-hidden" data-modal>
-        <div class="modal" >
+   <button data-modal-open>Відкрити модальне вікно</button>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
             <button class="close" data-modal-close><i class="fa-solid fa-xmark"></i></button>
-            <h3 class="input-head">Реєстрація</h3>
-            <form class="form" action="">
-                <label for="text" class="label">Ім'я</label>
-                <span class="input-cont">
-                <i class="fa-solid fa-user ico"></i>
-                <input type="text" id="text" class="name-input" autocomplete="off">
-                </span>
-                <label for="email" class="label">Пошта</label>
-                <span class="input-cont">
-                <i class="fa-solid fa-envelope ico"></i>
-                <input id="email"
-                type="email"  class="email-input"
-                autocomplete="off"
-                required minlength="10"
-                maxlength="40">
-                </span>
-                <label for="password" class="label">Пароль</label>
-                <span class="input-cont">
-                <i class="fa-solid fa-lock ico"></i>
-                <input type="password" id="password" class="password"
-                 autocomplete="off" required>
-                </span>
-                 <input type="checkbox" class="check"/><p class="check-text">Погоджуюся з розсилкою та приймаю <a class="a-check" href="">Умови договору</a></p>
-                <button type="submit" class="submit"><a class="prof-link" href="./profile.html">Відправити</a></button>
-                
-            </form>
+            
+            <!-- Вкладки переключення -->
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="register">Реєстрація</button>
+                <button class="tab-btn" data-tab="login">Вхід</button>
+            </div>
+
+            <!-- Форма реєстрації -->
+            <div class="form-container active" data-form="register">
+                <form class="form" action="">
+                    <label for="register-name" class="label">Ім'я</label>
+                    <span class="input-cont">
+                        <i class="fa-solid fa-user ico"></i>
+                        <input type="text" id="register-name" class="name-input" autocomplete="off">
+                    </span>
+                    <label for="register-email" class="label">Пошта</label>
+                    <span class="input-cont">
+                        <i class="fa-solid fa-envelope ico"></i>
+                        <input id="register-email" type="email" class="email-input" autocomplete="off" required minlength="10" maxlength="40">
+                    </span>
+                    <label for="register-password" class="label">Пароль</label>
+                    <span class="input-cont">
+                        <i class="fa-solid fa-lock ico"></i>
+                        <input type="password" id="register-password" class="password" autocomplete="off" required>
+                    </span>
+                    <input type="checkbox" class="check"/><p class="check-text">Погоджуюся з розсилкою та приймаю <a class="a-check" href="">Умови договору</a></p>
+                    <button type="submit" class="submit"><a class="prof-link" href="./profile.html">Відправити</a></button>
+                </form>
+            </div>
+
+            <!-- Форма входу -->
+            <div class="form-container" data-form="login">
+                <form class="form" action="">
+                    <label for="login-email" class="label">Пошта</label>
+                    <span class="input-cont">
+                        <i class="fa-solid fa-envelope ico"></i>
+                        <input id="login-email" type="email" class="email-input" autocomplete="off" required minlength="10" maxlength="40">
+                    </span>
+                    <label for="login-password" class="label">Пароль</label>
+                    <span class="input-cont">
+                        <i class="fa-solid fa-lock ico"></i>
+                        <input type="password" id="login-password" class="password" autocomplete="off" required>
+                    </span>
+                    <button type="submit" class="submit2"><a class="prof-link" href="./profile.html">Увійти</a></button>
+                </form>
+            </div>
         </div>
     </div>
+
     
 
 
@@ -446,3 +466,12 @@
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
