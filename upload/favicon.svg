@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <style>
+      .letter {
+        fill: #3498db;
+        stroke: #ffffff;
+        stroke-width: 4;
+        stroke-linejoin: round;
+        stroke-linecap: round;
+      }
+    </style>
+  </defs>
+  
+  <!-- Буква I - курсив -->
+  <rect class="letter" x="25" y="25" width="12" height="50" transform="skewX(-12)"/>
+  
+  <!-- Буква T - объединенная в один путь, курсив -->
+  <path class="letter" d="M 45 25 L 80 25 L 80 37 L 68 37 L 68 75 L 56 75 L 56 37 L 45 37 Z" transform="skewX(-12)"/>
+</svg>
