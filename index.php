@@ -26,7 +26,7 @@
 </head>
 
 <body>
-
+	<!--#import -->
 
 	<header>
 	    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -306,7 +306,6 @@
 				</ul>
 			</div> 
 		</section> 
-		
 		<section class="promo-boxes">
 			<div class="container-fluid">
 				<div class="row">
@@ -397,18 +396,18 @@
             <button class="close" data-modal-close><i class="fa-solid fa-xmark"></i></button>
             
             <div class="tabs">
-                <button class="tab-btn active" data-tab="register">Реєстрація</button>
-                <button class="tab-btn" data-tab="login">Вхід</button>
+                <button class="tab-btn active" data-tab="register">Регистрация</button>
+                <button class="tab-btn" data-tab="login">Вход</button>
             </div>
 
             <div class="form-container active" data-form="register">
                 <form class="form" action="">
-                    <label for="register-name" class="label">Ім'я</label>
+                    <label for="register-name" class="label">Имя</label>
                     <span class="input-cont">
                         <i class="fa-solid fa-user ico"></i>
                         <input type="text" id="register-name" class="name-input" autocomplete="off">
                     </span>
-                    <label for="register-email" class="label">Пошта</label>
+                    <label for="register-email" class="label">Почта</label>
                     <span class="input-cont">
                         <i class="fa-solid fa-envelope ico"></i>
                         <input id="register-email" type="email" class="email-input" autocomplete="off" required minlength="10" maxlength="40">
@@ -418,7 +417,7 @@
                         <i class="fa-solid fa-lock ico"></i>
                         <input type="password" id="register-password" class="password" autocomplete="off" required>
                     </span>
-                    <input type="checkbox" class="check"/><p class="check-text">Погоджуюся з розсилкою та приймаю <a class="a-check" href="">Умови договору</a></p>
+                    <input type="checkbox" class="check" id="agree-check" required/><p class="check-text">Согласен с рассылкой и принимаю <a class="a-check" href="">Политику конфидециальности</a></p>
                     <button type="submit" class="submit"><a class="prof-link" href="./profile.html">Відправити</a></button>
                 </form>
             </div>
